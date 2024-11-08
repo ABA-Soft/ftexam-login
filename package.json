@@ -1,7 +1,7 @@
 {
-    "name": "keycloakify-starter",
+    "name": "ftexam",
     "version": "0.0.0",
-    "description": "Starter for Keycloakify 11",
+    "description": "Keycloak login theme for FTExam",
     "repository": {
         "type": "git",
         "url": "git://github.com/codegouvfr/keycloakify-starter.git"

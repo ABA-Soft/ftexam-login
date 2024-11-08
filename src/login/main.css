@@ -1,0 +1,397 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto/Roboto-Light.ttf);
+    font-weight: 200;
+}
+
+:root {
+    --primary: #825fb3;
+    --primary-light: #e2d0ec;
+    --gray: #495057;
+}
+
+* {
+    font-family: Roboto;
+}
+
+.login-pf body {
+    background: #fff;
+}
+
+.kcFormHeaderClass,
+.kcLocaleDropDownClass > button {
+    color: var(--primary) !important;
+}
+
+.kcLocaleWrapperClass {
+    display: flex;
+    justify-content: center;
+}
+
+.kcLocaleListClass {
+    right: unset !important;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.pf-c-dropdown__menu-item:focus,
+.pf-c-dropdown__menu-item:hover {
+    background-color: var(--primary-light);
+}
+
+.pf-c-dropdown__menu-item:focus {
+    outline: 5px auto var(--primary);
+}
+
+.card-pf {
+    box-shadow: none;
+    border: none;
+    max-width: 400px;
+}
+
+.kcInputClass {
+    font-family: Roboto;
+    font-size: 1rem;
+    color: #495057;
+    background: #ffffff;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ced4da;
+    transition:
+        background-color 0.15s,
+        border-color 0.15s,
+        box-shadow 0.15s;
+    appearance: none;
+    border-radius: 4px;
+}
+
+.kcInputClass:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem rgba(136, 60, 174, 0.5);
+    border-color: var(--primary);
+}
+
+.login-pf-page .login-pf-settings {
+    align-items: center;
+}
+
+.checkbox {
+    margin-top: 15px !important;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label div {
+    margin-left: 5px;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+#rememberMe {
+    margin: 0;
+    margin-left: -20px;
+    appearance: none;
+    border: 2px solid #ced4da;
+    background: #ffffff;
+    width: 20px;
+    height: 20px;
+    color: #212529;
+    border-radius: 4px;
+    transition:
+        background-color 0.15s,
+        border-color 0.15s,
+        box-shadow 0.15s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#rememberMe:focus {
+    border: 2px solid var(--primary);
+    outline: 2px var(--primary);
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem rgba(136, 60, 174, 0.5);
+}
+
+#rememberMe:checked {
+    background: var(--primary);
+}
+
+#rememberMe::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    clip-path: polygon(
+        36.031% 100%,
+        36.031% 100%,
+        35.865% 99.99%,
+        35.7% 99.971%,
+        35.536% 99.945%,
+        35.373% 99.911%,
+        35.211% 99.87%,
+        35.051% 99.821%,
+        34.893% 99.764%,
+        34.736% 99.7%,
+        34.582% 99.629%,
+        34.43% 99.55%,
+        34.43% 99.55%,
+        34.281% 99.464%,
+        34.136% 99.371%,
+        33.994% 99.271%,
+        33.856% 99.165%,
+        33.721% 99.052%,
+        33.591% 98.933%,
+        33.465% 98.808%,
+        33.343% 98.678%,
+        33.226% 98.541%,
+        33.114% 98.398%,
+        5.588% 66.364%,
+        5.588% 66.364%,
+        5.433% 66.242%,
+        5.283% 66.111%,
+        5.139% 65.973%,
+        5% 65.828%,
+        4.868% 65.675%,
+        4.741% 65.516%,
+        4.621% 65.35%,
+        4.507% 65.178%,
+        4.399% 65%,
+        4.299% 64.816%,
+        4.299% 64.816%,
+        4.206% 64.626%,
+        4.12% 64.433%,
+        4.042% 64.235%,
+        3.972% 64.034%,
+        3.91% 63.83%,
+        3.856% 63.622%,
+        3.81% 63.411%,
+        3.773% 63.199%,
+        3.743% 62.984%,
+        3.722% 62.767%,
+        3.722% 62.767%,
+        3.709% 62.549%,
+        3.705% 62.332%,
+        3.709% 62.115%,
+        3.722% 61.898%,
+        3.743% 61.682%,
+        3.772% 61.468%,
+        3.81% 61.256%,
+        3.856% 61.045%,
+        3.91% 60.837%,
+        3.973% 60.631%,
+        3.973% 60.631%,
+        4.043% 60.429%,
+        4.121% 60.231%,
+        4.206% 60.038%,
+        4.299% 59.849%,
+        4.399% 59.666%,
+        4.506% 59.488%,
+        4.62% 59.316%,
+        4.74% 59.15%,
+        4.867% 58.991%,
+        5.001% 58.837%,
+        5.001% 58.837%,
+        5.14% 58.691%,
+        5.284% 58.553%,
+        5.434% 58.423%,
+        5.588% 58.301%,
+        5.746% 58.187%,
+        5.909% 58.081%,
+        6.076% 57.985%,
+        6.247% 57.897%,
+        6.421% 57.817%,
+        6.599% 57.748%,
+        6.599% 57.748%,
+        6.779% 57.687%,
+        6.961% 57.636%,
+        7.144% 57.595%,
+        7.329% 57.564%,
+        7.514% 57.542%,
+        7.7% 57.53%,
+        7.887% 57.528%,
+        8.073% 57.536%,
+        8.26% 57.553%,
+        8.446% 57.581%,
+        8.446% 57.581%,
+        8.63% 57.618%,
+        8.813% 57.665%,
+        8.993% 57.721%,
+        9.171% 57.787%,
+        9.346% 57.861%,
+        9.518% 57.945%,
+        9.687% 58.038%,
+        9.852% 58.14%,
+        10.013% 58.251%,
+        10.17% 58.37%,
+        10.17% 58.37%,
+        10.322% 58.498%,
+        10.468% 58.633%,
+        10.609% 58.775%,
+        10.745% 58.925%,
+        10.874% 59.081%,
+        10.997% 59.244%,
+        11.114% 59.414%,
+        11.224% 59.589%,
+        11.327% 59.771%,
+        11.423% 59.958%,
+        36.031% 88.404%,
+        93.67% 21.517%,
+        93.67% 21.517%,
+        93.907% 21.351%,
+        94.152% 21.204%,
+        94.404% 21.077%,
+        94.662% 20.971%,
+        94.926% 20.884%,
+        95.194% 20.818%,
+        95.465% 20.772%,
+        95.738% 20.748%,
+        96.014% 20.745%,
+        96.29% 20.763%,
+        96.29% 20.763%,
+        96.565% 20.803%,
+        96.835% 20.864%,
+        97.1% 20.945%,
+        97.36% 21.047%,
+        97.613% 21.168%,
+        97.858% 21.308%,
+        98.096% 21.467%,
+        98.324% 21.645%,
+        98.542% 21.84%,
+        98.75% 22.053%,
+        98.75% 22.053%,
+        98.945% 22.282%,
+        99.125% 22.524%,
+        99.291% 22.779%,
+        99.441% 23.046%,
+        99.576% 23.323%,
+        99.694% 23.61%,
+        99.797% 23.905%,
+        99.882% 24.209%,
+        99.95% 24.52%,
+        100% 24.836%,
+        100% 24.836%,
+        100.032% 25.156%,
+        100.045% 25.476%,
+        100.04% 25.796%,
+        100.017% 26.113%,
+        99.976% 26.428%,
+        99.917% 26.739%,
+        99.84% 27.045%,
+        99.746% 27.345%,
+        99.634% 27.639%,
+        99.506% 27.924%,
+        38.949% 98.398%,
+        38.949% 98.398%,
+        38.836% 98.541%,
+        38.719% 98.678%,
+        38.598% 98.808%,
+        38.471% 98.933%,
+        38.341% 99.052%,
+        38.207% 99.165%,
+        38.069% 99.271%,
+        37.927% 99.371%,
+        37.781% 99.464%,
+        37.632% 99.55%,
+        37.632% 99.55%,
+        37.48% 99.629%,
+        37.326% 99.7%,
+        37.17% 99.764%,
+        37.012% 99.821%,
+        36.851% 99.87%,
+        36.69% 99.911%,
+        36.527% 99.945%,
+        36.363% 99.971%,
+        36.197% 99.99%,
+        36.031% 100%
+    );
+    transform: scale(0);
+    background-color: #fff;
+}
+
+#rememberMe:checked::before {
+    transform: scale(1);
+}
+
+.kcInputGroup.pf-c-input-group {
+    position: relative;
+}
+
+.kcLabelClass {
+    margin-bottom: 0.5rem;
+}
+
+.kcFormPasswordVisibilityButtonClass {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    z-index: 100;
+    background-color: unset !important;
+    border: none;
+}
+
+.pf-c-button:after {
+    border: 0;
+}
+
+#password {
+    padding-right: 2.5rem;
+}
+
+.kcFormPasswordVisibilityIconShow {
+    color: var(--gray);
+}
+
+.pf-c-form-control[aria-invalid="true"] {
+    padding-bottom: 0.5rem;
+    background-image: none;
+    border-bottom-width: 1px;
+}
+
+.btn-lg {
+    background-color: var(--primary) !important;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.login-pf-page .login-pf-signup {
+    margin: 0;
+    margin-top: 15px;
+}
+
+#kc-info {
+    margin: 15px 0 0 0;
+}
+
+div[data-kc-msg="noAccount"] {
+    color: #000;
+}
+
+#kc-info-wrapper {
+    background-color: var(--primary-light);
+}
+
+@media (min-width: 768px) {
+    .login-pf-page .login-pf-page-header {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #kc-header-wrapper {
+        padding: 0;
+    }
+
+    #kc-header {
+        text-align: center;
+    }
+}
