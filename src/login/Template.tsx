@@ -7,7 +7,7 @@ import { useSetClassName } from "keycloakify/tools/useSetClassName";
 import { useInitialize } from "keycloakify/login/Template.useInitialize";
 import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
-import fideLogo from "./assets/fideCoverBackgroundOverlay.jpg";
+import fideLogo from "./assets/bfmFideLogotypeFull.svg";
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
