@@ -7,8 +7,7 @@ import { useSetClassName } from "keycloakify/tools/useSetClassName";
 import { useInitialize } from "keycloakify/login/Template.useInitialize";
 import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
-import waveSvg from "./assets/waves.svg";
-import loginIcon from "./assets/icon-login.svg";
+import fideLogo from "./assets/fideLogo_rgb.png";
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
@@ -57,8 +56,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
         <div className={kcClsx("kcLoginClass")}>
             <div id="kc-header" className={kcClsx("kcHeaderClass")}>
                 <div id="kc-header-wrapper" className={kcClsx("kcHeaderWrapperClass")}>
-                    {/* {msg("loginTitleHtml", realm.displayNameHtml)} */}
-                    <img src={loginIcon} width={84} />
+                    <img src={fideLogo} />
                 </div>
             </div>
             <div className={kcClsx("kcFormCardClass")}>
@@ -183,9 +181,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                     </div>
                 </div>
             </div>
-            <div className="waves">
-                <img src={waveSvg} />
-            </div>
+
         </div>
     );
 }

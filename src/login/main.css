@@ -5,9 +5,11 @@
 }
 
 :root {
-    --primary: #825fb3;
-    --primary-light: #e2d0ec;
+    --primary: #d00;
+    --primary-light: #e4d9d9;
     --gray: #495057;
+    --dark-gray: #333;
+    --shadow-color: rgba(214, 97, 97, 0.54);
 }
 
 * {
@@ -16,6 +18,16 @@
 
 .login-pf body {
     background: #fff;
+
+}
+
+.kcBodyClass {
+    background-image: url("assets/fideCoverBackgroundOverlay.jpg") !important;
+    background-size: cover !important;
+    background-color: #c60100 !important;
+    background-position: center left !important;
+    background-attachment: scroll !important;
+    background-repeat: no-repeat !important;
 }
 
 .kcFormHeaderClass,
@@ -45,9 +57,16 @@
 }
 
 .card-pf {
-    box-shadow: none;
     border: none;
     max-width: 400px;
+    border-radius: 10px;
+    margin-top: 60px;
+    box-shadow: 0 .5rem .75rem .375rem rgba(0,0,0,.25) !important;
+}
+
+.kcLabelClass {
+    color: var(--dark-gray) !important;
+    font-size: .9rem !important;
 }
 
 .kcInputClass {
@@ -68,7 +87,7 @@
 .kcInputClass:focus {
     outline: 0 none;
     outline-offset: 0;
-    box-shadow: 0 0 0 0.2rem rgba(136, 60, 174, 0.5);
+    box-shadow: 0 0 0 0.2rem var(--shadow-color);
     border-color: var(--primary);
 }
 
@@ -88,7 +107,7 @@
 .checkbox label div {
     margin-left: 5px;
     color: var(--primary);
-    font-size: 14px;
+    font-size: .9rem;
 }
 
 #rememberMe {
@@ -115,7 +134,7 @@
     border: 2px solid var(--primary);
     outline: 2px var(--primary);
     outline-offset: 0;
-    box-shadow: 0 0 0 0.2rem rgba(136, 60, 174, 0.5);
+    box-shadow: 0 0 0 0.2rem var(--shadow-color);
 }
 
 #rememberMe:checked {
@@ -354,6 +373,14 @@
 
 .btn-lg {
     background-color: var(--primary) !important;
+    padding: .8rem 1.2rem !important;
+    font-weight: 800 !important;
+    font-size: 1.1rem !important;
+    transition: all .3s;
+}
+
+.btn-lg:hover {
+    background-color: var(--dark-gray) !important;
 }
 
 .waves {
